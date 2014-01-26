@@ -1,6 +1,6 @@
 {
   "name": "es6-browserify",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Transpile ES6 in a Browserify transform",
   "main": "index.js",
   "scripts": {

@@ -1,7 +1,7 @@
 var through = require('through'),
     transpiler = require('es6-transpiler');
 
-var buffer = [];
+var buf = [];
 
 module.exports = function(file) {
   if(!isES6(file)) return through();
@@ -13,12 +13,12 @@ function isES6(file) {
 };
 
 function buffer(data) {
-  buffer.push(data);
+  buf.push(data);
 }
 
 function transform(file) {
   var result = transpiler.run({
-    src: buffer.join(''),
+    src: buf.join(''),
     disallowUnknownReferences: false
   });
 
