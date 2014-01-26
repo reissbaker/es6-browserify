@@ -8,7 +8,7 @@ module.exports = function(file) {
   var buf = [];
 
   function buffer(data) {
-    buf.push('\n!function(){\n"use strict";\n' + data + '\n}();\n');
+    buf.push(data);
   }
 
   function transform() {
