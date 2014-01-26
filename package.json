@@ -1,0 +1,30 @@
+{
+  "name": "es6-browserify",
+  "version": "0.0.1",
+  "description": "Transpile ES6 in a Browserify transform",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/browserify -t index.js ./test/class.js"
+  },
+  "keywords": [
+    "es6",
+    "browserify",
+    "transform"
+  ],
+  "author": {
+    "name": "Matt Baker",
+    "url": "twitter.com/reissbaker"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/reissbaker/es6-browserify.git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "es6-transpiler": "~0.7.0",
+    "through": "2.3.4"
+  },
+  "devDependencies": {
+    "browserify": "3.24.1"
+  }
+}
