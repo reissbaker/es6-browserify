@@ -12,7 +12,6 @@ module.exports = function(file) {
   }
 
   function transform() {
-      console.log(buf);
     var result = transpiler.run({
       src: buf.join(''),
       disallowUnknownReferences: false
