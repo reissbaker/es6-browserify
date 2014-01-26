@@ -1,10 +1,10 @@
 {
   "name": "es6-browserify",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Transpile ES6 in a Browserify transform",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/browserify -t index.js ./test/class.js"
+    "test": "./node_modules/.bin/browserify -t index.js ./test/commonjs.js"
   },
   "keywords": [
     "es6",

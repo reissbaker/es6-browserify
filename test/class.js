@@ -9,3 +9,5 @@ class B extends A {
     super('B');
   }
 }
+
+mocule.exports = A;

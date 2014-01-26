@@ -13,10 +13,10 @@ function isES6(file) {
 };
 
 function buffer(data) {
-  buf.push(data);
+  buf.push('\n!function(){\n"use strict";\n' + data + '\n}();\n');
 }
 
-function transform(file) {
+function transform() {
   var result = transpiler.run({
     src: buf.join(''),
     disallowUnknownReferences: false
