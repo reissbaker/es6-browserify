@@ -10,4 +10,4 @@ class B extends A {
   }
 }
 
-mocule.exports = A;
+module.exports = A;
